@@ -19,10 +19,13 @@
 
   <main class="container page">
     <h1>تواصل معنا</h1>
-    <form class="form">
-      <label>الاسم<input type="text" required /></label>
-      <label>البريد الإلكتروني<input type="email" required /></label>
-      <label>الرسالة<textarea required></textarea></label>
+    <form class="form" action="https://formsubmit.co/your-email@example.com" method="POST">
+      <input type="hidden" name="_subject" value="رسالة جديدة من موق�� سديم" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <label>الاسم<input name="name" type="text" required /></label>
+      <label>البريد الإلكتروني<input name="email" type="email" required /></label>
+      <label>الرسالة<textarea name="message" required></textarea></label>
       <button class="btn primary" type="submit">إرسال</button>
     </form>
 
